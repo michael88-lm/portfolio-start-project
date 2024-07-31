@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import man from '../../assets/images/man.png'
+import man from '../../assets/images/man.svg'
 
 interface ImageProps {
   src: string

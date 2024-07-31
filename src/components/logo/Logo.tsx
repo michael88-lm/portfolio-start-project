@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 
 interface ImageProps {
@@ -7,10 +6,10 @@ interface ImageProps {
 }
 
 export function Logo() {
-  return <Group1 src={Group1} alt='#' />
+  return <Circle1 src={Circle1} alt='#' />
 }
 
-const Group1 = styled.img<ImageProps>``
+const Circle1 = styled.img<ImageProps>``
 
 // export const Ellipse1 = styled.img<ImageProps>`
 //   border-radius: 100%;

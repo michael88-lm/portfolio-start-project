@@ -1,1 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+container {
+  justify-content: center;
+}
+/* .Logo1 {
+  border-radius: 100%;
+  margin-top: 10px;
+  margin-right: 1276px;
+  margin-bottom: 444px;
+  margin-left: 18px;
+}
+.Logo23 {
+  border-radius: 100%;
+  fill: #feeae3;
+  margin-top: 38px;
+  margin-right: 3478px;
+  margin-bottom: 513px;
+  margin-left: 126px;
+}
+.logo22 {
+  border-radius: 100%;
+  fill: #f9f7c7;
+  margin-top: 97px;
+  margin-right: 1250px;
+  margin-bottom: 3401px;
+  margin-left: 113px;
+} */
+
+.boxs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.box-a {
+  padding: 20px;
+  margin: 0;
+  gap: 20px;
+}

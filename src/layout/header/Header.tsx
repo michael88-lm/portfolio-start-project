@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-// import ellipse1 from '../../assets/images/ellipse1.webp'
-// import ellipse23 from '../../assets/images/ellipse23.webp'
 // import { FlexWrapper } from '../../components/FlexWrapper'
 import { Container } from '../../components/container'
 import { Hero } from '../../components/hero/Hero'

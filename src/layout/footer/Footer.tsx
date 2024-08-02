@@ -36,5 +36,6 @@ const StyledFooter = styled.footer`
     display: flex;
     gap: 70px;
     list-style: none;
+    text-decoration: none;
   }
 `

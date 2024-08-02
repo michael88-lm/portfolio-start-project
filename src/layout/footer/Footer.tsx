@@ -8,11 +8,21 @@ export const Footer = () => {
         <li>
           <a href='mailto:@iosipratama'></a>
         </li>
-        <li>Have a nice day 😘</li>
-        <li>Dribbble</li>
-        <li>Personal Blog</li>
-        <li>Medium</li>
-        <li>Behance</li>
+        <li>
+          <a href=' '> Have a nice day 😘</a>
+        </li>
+        <li>
+          <a href=' '>Dribbble </a>
+        </li>
+        <li>
+          <a href=' '> Personal Blog</a>
+        </li>
+        <li>
+          <a href=' '> Personal Blog</a>
+        </li>
+        <li>
+          <a href=' '>Behance</a>
+        </li>
         <li>
           <a href='https://www.linkedin.com/' target='blank'></a>
         </li>

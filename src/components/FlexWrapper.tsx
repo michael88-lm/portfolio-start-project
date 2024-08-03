@@ -5,10 +5,11 @@ type FlexWrapperPropsType = {
   justify?: string
   align?: string
   wrap?: string
+  children?: React.ReactNode
 }
 
 export const FlexWrapper = styled.div<FlexWrapperPropsType>`
-    display: flex;
+    display: row;
     flex-direction: ${(props) => props.direction || 'row'}
     justify-content: ${(props) => props.justify || 'stretch'}
     flex-wrap: ${(props) => props.wrap || 'nowrap'}

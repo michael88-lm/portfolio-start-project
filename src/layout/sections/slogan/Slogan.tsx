@@ -13,9 +13,9 @@ export const Slogan = () => {
     <StyledSlogan>
       <h2>Let’s work together on your next product.</h2>
       <span>
-        <Cursor src={cursor} alt='#' />{' '}
+        <Cursor src={cursor} alt='#' />
       </span>
-      <a href='mailto:pratamaiosi@gmail.com'></a>
+      <a href=' '>pratamaiosi@gmail.com</a>
     </StyledSlogan>
   )
 }

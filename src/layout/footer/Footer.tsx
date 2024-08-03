@@ -6,7 +6,7 @@ export const Footer = () => {
     <StyledFooter>
       <ul>
         <li>
-          <a href='mailto:@iosipratama'></a>
+          <a href=' '>@iosipratama</a>
         </li>
         <li>
           <a href=' '> Have a nice day 😘</a>
@@ -24,7 +24,7 @@ export const Footer = () => {
           <a href=' '>Behance</a>
         </li>
         <li>
-          <a href='https://www.linkedin.com/' target='blank'></a>
+          <a href=' '>Linkedin</a>
         </li>
       </ul>
     </StyledFooter>
@@ -36,6 +36,10 @@ const StyledFooter = styled.footer`
     display: flex;
     gap: 70px;
     list-style: none;
+  }
+
+  a {
     text-decoration: none;
+    gap: 20px;
   }
 `

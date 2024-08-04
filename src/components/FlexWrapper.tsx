@@ -9,7 +9,7 @@ type FlexWrapperPropsType = {
 }
 
 export const FlexWrapper = styled.div<FlexWrapperPropsType>`
-    display: row;
+    display: flex;
     flex-direction: ${(props) => props.direction || 'row'}
     justify-content: ${(props) => props.justify || 'stretch'}
     flex-wrap: ${(props) => props.wrap || 'nowrap'}

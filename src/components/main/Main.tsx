@@ -9,28 +9,31 @@ interface ImageProps {
   alt: string
 }
 
-export function Iosi() {
+export function Main() {
   return (
-    <div>
+    <StyledMain>
       <FlexWrapper align='center' justify='space-around'>
         <div>
-          <span>Hi! 👋</span>
-          <h2>
-            I’m Iosi, a product designer from Indonesia. A passionate one in human-centred design.
-          </h2>
+          <Styledhello>Hi! 👋</Styledhello>
         </div>
-        <div className='myHero'>
+
+        <div>
+          <Name>
+            I’m Iosi, a product designer from Indonesia. A passionate one in human-centred design.
+          </Name>
+        </div>
+        <div>
           <Man src={man} alt='#' />
         </div>
 
         <div>
-          <span>
+          <Сurrentwork>
             Currently Freelancing for UX, UI, & Web Design Project . Invite me to join your design
             team <a href=' '>pratamaiosi@gmail.com </a>{' '}
-          </span>
+          </Сurrentwork>
         </div>
       </FlexWrapper>
-    </div>
+    </StyledMain>
   )
 }
 
@@ -40,3 +43,24 @@ const Man = styled.img<ImageProps>`
   margin-bottom: 100px;
   margin-left: 964px;
 `
+const StyledMain = styled.div`
+ 
+  padding-left: 15px;
+  padding-right: 15px;
+  margin; 0 auto;
+  display: flex;
+  align-items: center;
+`
+
+const Name = styled.h2`
+  display: inline-block;
+  weight: 695px;
+  height: 225px;
+  margin-right: 695px;
+  margin-left: 165px;
+  letter-spacing: 0.01em;
+  color: #0a0a14;
+`
+const Styledhello = styled.span``
+
+const Сurrentwork = styled.span``

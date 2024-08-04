@@ -3,8 +3,8 @@ import styled from 'styled-components'
 
 import { FlexWrapper } from '../../components/FlexWrapper'
 import { Container } from '../../components/container'
-import { Iosi } from '../../components/iosi/Iosi'
 import { Logo } from '../../components/logo/Logo'
+import { Main } from '../../components/main/Main'
 
 export const Header = () => {
   return (
@@ -12,7 +12,7 @@ export const Header = () => {
       <Container>
         <Logo />
         <FlexWrapper />
-        <Iosi />
+        <Main />
       </Container>
     </StyledHeader>
   )

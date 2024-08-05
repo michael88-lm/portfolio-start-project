@@ -17,7 +17,7 @@ export const Works = () => {
     <div className='container'>
       <div className='boxs'>
         <div className='box-a'>
-          <span>Kalender Indonesia</span>
+          <h3>Kalender Indonesia</h3>
           <p>Redesign Kalender Indonesia Mobile App to serve a new user needs</p>
           <span>Read Case Study</span>
           <Rectleft src={rectleft} alt='#' />
@@ -25,7 +25,7 @@ export const Works = () => {
         </div>
 
         <div className='box-a'>
-          <span>Aksestani Indonesia</span>
+          <h3>Aksestani Indonesia</h3>
           <p>Rethinking selling flow on Marketplace Aksestani to help farmer sell easily.</p>
           <span>Read Case Study</span>
           <Aksestani src={aksestani} alt='' />
@@ -33,8 +33,8 @@ export const Works = () => {
         </div>
 
         <div className='box-a'>
-          <h3>my last freelance works</h3>
-          <h4>Mr Biller - Startup</h4>
+          <h2>my last freelance works</h2>
+          <h3>Mr Biller - Startup</h3>
           <Mockup src={mockup} alt='' />
           <p>
             Redesign Mr Biller Landing Page become more fresh and could respresent their business

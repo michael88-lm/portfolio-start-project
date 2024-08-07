@@ -49,9 +49,6 @@ justify-content: center;
 `
 
 const Name = styled.h2`
-  // weight: 695px;
-  // height: 225px;
-  // padding-left: 165px;
   margin-bottom: 49px;
   font-family: var(--font-family);
   font-weight: 500;
@@ -63,4 +60,6 @@ const Name = styled.h2`
 `
 const Styledhello = styled.span``
 
-const Сurrentwork = styled.span``
+const Сurrentwork = styled.span`
+  weight: 504px;
+`

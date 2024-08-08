@@ -56,8 +56,8 @@ const Photo = styled.img<ImageProps>`
   object-fit: cover;
 `
 const Aksestani = styled.img<ImageProps>`
-  widht: 422px;
-  heiht: 828px;
+  width: 422px;
+  height: 828px;
   object-fit: cover;
 `
 const Mockup = styled.img<ImageProps>``

@@ -20,6 +20,12 @@ export const Slogan = () => {
   )
 }
 
-const StyledSlogan = styled.div``
+const StyledSlogan = styled.div`
+  justify-content: center;
+  padding-left: 165px;
+  padding-right: 735px;
+  padding-top: 40px;
+  padding-bottom: 84px;
+`
 
 const Cursor = styled.span<ImageProps>``

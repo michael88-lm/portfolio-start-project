@@ -32,7 +32,7 @@ export const Works = () => {
           <Rectright src={rectright} alt='#' />
         </div>
 
-        <div className='box-a'>
+        {/* <div className='box-a'>
           <h2>my last freelance works</h2>
           <h3>Mr Biller - Startup</h3>
           <Mockup src={mockup} alt='' />
@@ -44,7 +44,7 @@ export const Works = () => {
           <a href='#'>
             <span>Check on live</span>
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   )

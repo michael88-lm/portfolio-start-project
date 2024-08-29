@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 import mockup from '../../../assets/images/mockup.png'
 import { FlexWrapper } from '../../../components/FlexWrapper'
+import arrow1 from './../../../assets/images/arrow1.png'
 
 interface ImageProps {
   src: string
@@ -26,9 +27,11 @@ export const Lastworks = () => {
             Redesign Mr Biller Landing Page become more fresh and could respresent their business
             better.
           </p>
-          <span>Client from 🇦🇺</span>
+          <span>Client from </span> <br />
           <a href='#'>
-            <span>Check on live</span>
+            <span>
+              Check on live <Arrow1 src={arrow1} alt='arrow1' />
+            </span>
           </a>
         </Item2>
       </FlexWrapper>
@@ -37,12 +40,12 @@ export const Lastworks = () => {
 }
 
 const Mockup = styled.img<ImageProps>``
+const Arrow1 = styled.img<ImageProps>``
 
 const Styledbox = styled.div`
-  /* display: flex; */
   flex-direction: column;
   justify-content: center;
-  margin: 0 auto;
+  margin-bottom: 200px;
   gap: 20px;
   text-align: left;
 `
@@ -51,9 +54,11 @@ const Item1 = styled.div`
   justify-content: center;
 `
 const Item2 = styled.div`
-  display: inline-block;
   width: 469px;
   height: 229px;
+  position: relative;
+  right: 80px;
+  top: 100px;
 `
 const Title = styled.h2`
   justify-content: flex-start;

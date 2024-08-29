@@ -26,6 +26,8 @@ const StyledSlogan = styled.div`
   padding-right: 735px;
   padding-top: 40px;
   padding-bottom: 84px;
+  margin-bottom: 140px;
+  margin-top: 140px;
 `
 
 const Cursor = styled.span<ImageProps>``

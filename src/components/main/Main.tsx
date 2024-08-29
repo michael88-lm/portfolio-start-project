@@ -37,12 +37,12 @@ export function Main() {
 const Man = styled.img<ImageProps>``
 
 const StyledMain = styled.div`
-justify-content: center;
+  justify-content: center;
   padding-left: 165px;
   padding-right: 186px;
   padding-top: 52px;
   padding-bottom: 40px;
-  margin; 0 auto;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   column-gap: 104px;

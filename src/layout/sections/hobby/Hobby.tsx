@@ -1,16 +1,26 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import arrow from './../../../assets/images/arrow-right.png'
+import typewriter from './../../../assets/images/typewriter.png'
+
+interface ImageProps {
+  src: string
+  alt: string
+}
+
 export const Hobby = () => {
   return (
     <StyledHobby>
-      <h3>Activities on Spare Time</h3>
-      <h4>Writing</h4>
-      <h5 id='one-part'>Medium</h5>
+      <h2>Activities on Spare Time</h2>
+      <h3>Writing</h3>
+      <h4 id='one-part'>Medium</h4>
       <p>
         I like to think and write about UX Design on Medium. I also plan to upload designs from my
         personal project there too.
       </p>
+      <Typewriter src={typewriter} alt='typewriter' />
+
       <b>Tulisan pilihan</b>
       <ul>
         <li>Mengenal UX Design dan Berkarir sebagai UX Designer</li>
@@ -18,7 +28,7 @@ export const Hobby = () => {
         <li>Cerita Abunawas & Cara Startup Jaman Now Melakukan UX Research</li>
       </ul>
       <span>
-        Read My Medium{' '}
+        Read My Medium
         <a href='#'>
           <img src='#' alt='arrow-right' />
         </a>
@@ -31,15 +41,16 @@ export const Hobby = () => {
         blog
       </p>
       <span>
-        Curious? Read on this{' '}
-        <a href='#'>
-          <img src='#' alt='arrow-right' />
-        </a>
+        Curious? Read on this <Arrow src={arrow} alt='arrow' />
       </span>
-      <img src='#' alt='Ellipse(4)' />
-      <img src='' alt='Ellipse 2.2' />
     </StyledHobby>
   )
 }
 
-const StyledHobby = styled.section``
+export const StyledHobby = styled.section``
+
+const Arrow = styled.img<ImageProps>``
+
+const Typewriter = styled.img<ImageProps>`
+  box-shadow: 10px 16px 0px rgb(#b21aa1, #e92577, #e92577);
+`

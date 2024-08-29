@@ -1,11 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import mockup from '../../../assets/images/mockup.png'
-import rectleft from '../../../assets/images/rectleft.png'
-import rectright from '../../../assets/images/rectright.png'
-import aksestani from './../../../assets/images/aksestani.webp'
-import photo from './../../../assets/images/photo.png'
+import aksestani from './../../../assets/images/aksestani.png'
+import arrow3 from './../../../assets/images/arrow3.png'
+import arrow4 from './../../../assets/images/arrow4.png'
+import calender from './../../../assets/images/calender.png'
 
 interface ImageProps {
   src: string
@@ -14,53 +13,78 @@ interface ImageProps {
 
 export const Works = () => {
   return (
-    <div className='container'>
-      <div className='boxs'>
-        <div className='box-a'>
-          <h3>Kalender Indonesia</h3>
-          <p>Redesign Kalender Indonesia Mobile App to serve a new user needs</p>
-          <span>Read Case Study</span>
-          <Rectleft src={rectleft} alt='#' />
-          <Photo src={photo} alt='#' />
-        </div>
+    <div>
+      <StyledWork>
+        <Container1>
+          <Title1>
+            <h3>Kalender Indonesia</h3>
+            <p>Redesign Kalender Indonesia Mobile App to serve a new user needs</p>
+            <span>
+              Read Case Study
+              <Arrow3 src={arrow3} alt='arrow3' />
+            </span>
+          </Title1>
 
-        <div className='box-a'>
-          <h3>Aksestani Indonesia</h3>
-          <p>Rethinking selling flow on Marketplace Aksestani to help farmer sell easily.</p>
-          <span>Read Case Study</span>
+          <Calender src={calender} alt='#' />
+        </Container1>
+
+        <Container2>
+          <Title2>
+            <h3>Aksestani Indonesia</h3>
+            <p>Rethinking selling flow on Marketplace Aksestani to help farmer sell easily.</p>
+            <span>Read Case Study</span>
+            <Arrow4 src={arrow4} alt='arrow4' />
+          </Title2>
           <Aksestani src={aksestani} alt='' />
-          <Rectright src={rectright} alt='#' />
-        </div>
-
-        {/* <div className='box-a'>
-          <h2>my last freelance works</h2>
-          <h3>Mr Biller - Startup</h3>
-          <Mockup src={mockup} alt='' />
-          <p>
-            Redesign Mr Biller Landing Page become more fresh and could respresent their business
-            better.
-          </p>
-          <span>Client from 🇦🇺</span>
-          <a href='#'>
-            <span>Check on live</span>
-          </a>
-        </div> */}
-      </div>
+        </Container2>
+      </StyledWork>
     </div>
   )
 }
 
-const Photo = styled.img<ImageProps>`
+const Container2 = styled.div`
+  background-color: #d9f6f1;
+  width: 502px;
+  height: 648px;
+  padding-top: 130px;
+  padding-left: 40px;
+`
+
+const Container1 = styled.div`
+  background-color: #ddeefe;
+  width: 502px;
+  height: 648px;
+  padding-top: 130px;
+  padding-left: 40px;
+`
+
+const Calender = styled.img<ImageProps>`
   width: 422px;
-  height: 819px;
+  height: 431px;
   object-fit: cover;
 `
 const Aksestani = styled.img<ImageProps>`
   width: 422px;
-  height: 828px;
+  height: 431px;
   object-fit: cover;
 `
-const Mockup = styled.img<ImageProps>``
 
-const Rectleft = styled.img<ImageProps>``
-const Rectright = styled.img<ImageProps>``
+const StyledWork = styled.div`
+  display: flex;
+  gap: 56px;
+  padding-top: 100px;
+  padding-bottom: 200px;
+`
+
+const Arrow3 = styled.img<ImageProps>``
+const Arrow4 = styled.img<ImageProps>``
+
+const Title1 = styled.div`
+  position: relative;
+  bottom: 30px;
+`
+
+const Title2 = styled.div`
+  position: relative;
+  bottom: 30px;
+`

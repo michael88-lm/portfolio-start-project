@@ -59,6 +59,7 @@ const Item2 = styled.div`
   position: relative;
   right: 80px;
   top: 100px;
+  background-color: white;
 `
 const Title = styled.h2`
   justify-content: flex-start;

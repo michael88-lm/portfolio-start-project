@@ -12,12 +12,9 @@ container {
   justify-content: center;
 }
 .boxs {
-  /* display: grid; */
 }
 .box-a {
-  /* padding: 20px;
-  margin: 0;
-  gap: 20px; */
   position: relative;
   display: inline-block;
 }
+

@@ -2,7 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 
 import arrow1 from './../../../assets/images/arrow1.png'
+import arrow2 from './../../../assets/images/arrow2.png'
 import arrow from './../../../assets/images/arrow-right.png'
+import circle2 from './../../../assets/images/circle2.png'
+import circle3 from './../../../assets/images/circle3.png'
+import typewriter2 from './../../../assets/images/typewriter2.png'
 import typewriter from './../../../assets/images/typewriter.png'
 
 interface ImageProps {
@@ -21,7 +25,10 @@ export const Hobby = () => {
         personal project there too.
       </HobbyText>
 
-      <Typewriter src={typewriter} alt='typewriter' />
+      <StyledTypewriter>
+        <Typewriter src={typewriter} alt='typewriter' />
+        <Typewriter2 src={typewriter2} alt='typewriter2' />
+      </StyledTypewriter>
 
       <Name>Tulisan pilihan</Name>
       <Checklist>
@@ -36,6 +43,11 @@ export const Hobby = () => {
         </a>
       </Item>
 
+      <StyledCircles>
+        <Circle2 src={circle2} alt='circle2' />
+        <Circle3 src={circle3} alt='circle3' />
+      </StyledCircles>
+
       <StyledBlog>
         <h3>Personal Blog</h3>
         <p>
@@ -43,7 +55,7 @@ export const Hobby = () => {
           personal blog
         </p>
         <span>
-          Curious? Read on this <Arrow src={arrow} alt='arrow' />
+          Curious? Read on this <Arrow2 src={arrow2} alt='arrow2' />
         </span>
       </StyledBlog>
     </StyledHobby>
@@ -52,12 +64,31 @@ export const Hobby = () => {
 
 export const StyledHobby = styled.section``
 
-const Arrow = styled.img<ImageProps>``
 const Arrow1 = styled.img<ImageProps>``
 
-const Typewriter = styled.img<ImageProps>`
-  box-shadow: -10px 16px 0px;
+const Arrow2 = styled.img<ImageProps>`
+  margin-left: 5px;
+  font-size: 24px;
 `
+const StyledTypewriter = styled.div`
+  right: 165px;
+`
+const Typewriter = styled('img')`
+  position: relative;
+  right: -198px;
+  bottom: 16px;
+`
+const Typewriter2 = styled('img')``
+
+const StyledCircles = styled.div`
+  display: flex;
+  justify-content: space-between;
+`
+const Circle2 = styled('img')`
+  object-fit: contain;
+`
+const Circle3 = styled('img')``
+
 const HobbyTitle2 = styled.h2`
   padding-left: 165px;
   margin-bottom: 20px;
@@ -82,10 +113,9 @@ const HobbyTitle4 = styled.h4`
 `
 const HobbyText = styled.p`
   color: #0a0a14;
-  width: 490px;
+  /* width: 490px; */
   height: 44px;
-  padding-left: 387px;
-  display: inline;
+  padding-left: 390px;
 `
 const Checklist = styled.ul`
   font-family: var(--font-family);
@@ -114,14 +144,6 @@ const Item = styled.span`
   letter-spacing: 0.05em;
   color: #000;
 `
-// const Blog = styled.h3`
-//   padding-left: 555px;
-//   font-family: var(--second-family);
-//   font-weight: 700;
-//   font-size: 29px;
-//   letter-spacing: 0.05em;
-//   color: #000;
-// `
 
 const StyledBlog = styled.div`
   padding-left: 555px;

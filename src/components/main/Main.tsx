@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import circle1 from '../../assets/images/circle1.png'
 import man from '../../assets/images/man.png'
 
 // import { FlexWrapper } from '../FlexWrapper'
@@ -14,9 +15,10 @@ export function Main() {
   return (
     <StyledMain>
       {/* <FlexWrapper align='center' justify='space-around'> */}
+
       <div>
         <Styledhello>Hi! 👋</Styledhello>
-
+        <Circle1 src={circle1} alt='circle1' />
         <Name>
           I’m Iosi, a product designer from Indonesia. A passionate one in human-centred design.
         </Name>
@@ -35,6 +37,8 @@ export function Main() {
 }
 
 const Man = styled.img<ImageProps>``
+
+const Circle1 = styled('img')``
 
 const StyledMain = styled.div`
   justify-content: center;
